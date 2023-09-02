@@ -1,11 +1,10 @@
 services:
   axonserver:
     image: axoniq/axonserver
-    hostname: axonserver
     volumes:
       - ./axonserver-data:/data
       - ./axonserver-events:/eventdata
-      - ./axonserver-config:/config:ro
+      - ./axonserver-config:/config
     ports:
       - '8024:8024'
       - '8124:8124'
