@@ -7,3 +7,6 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
