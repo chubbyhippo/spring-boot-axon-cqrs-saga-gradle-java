@@ -22,6 +22,7 @@ repositories {
 }
 
 extra["springCloudVersion"] = "2022.0.4"
+extra["axonVersion"] = "4.8.1"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -30,6 +31,7 @@ dependencies {
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
+	implementation("org.axonframework:axon-spring-boot-starter:${property("axonVersion")}")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
