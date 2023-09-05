@@ -1,4 +1,4 @@
-package com.example.productservice.domain.model.entities;
+package com.example.productservice.domain.model.projections;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
